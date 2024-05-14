@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Admission Form</title>
+</head>
+<body>
+    
+    <div class="main">
+        <div class="register">
+            <h2>Admission Form</h2>
+            <form id="register" method="post">
+                <label>First Name : </label><br>
+                <input type="text" name="fname" id="name" placeholder="Enter First Your Name" required>
+                <br><br>
+                <label for="lname">Last Name : </label><br>
+                <input type="text" name="lname" id="name" placeholder="Enter Your Last Name" required>
+                <br><br>
+                <label for="age">Your Age : </label><br>
+                <input type="number" name="age" id="name" placeholder="Enter Your Age">
+                <br><br>
+                <label for="email">Email : </label><br>
+                <input type="email" name="email" id="name" placeholder="Enter Your Valid Email" required>
+                <br><br>
+                <label for="gender">Gender : </label><br>
+                &nbsp;&nbsp;&nbsp;
+                <input type="radio" name="gender" id="male">
+                &nbsp;
+                <span id="male">Male</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="female" name="gender">
+                &nbsp;
+                <span id="female">Female</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" id="others" name="gender">
+                &nbsp;
+                <span id="others">Others</span><br><br>
+                <input type="file" id="image_input" accept="image/png ,image/jpg">
+                <div class="display_image"></div><br>
+                <label for="courses">Courses : </label><br>
+                <select name="course" id="name" style="font-size: 18px;">
+                    <option value="select">-----select-----</option>
+                    <option value="bsc">B.sc</option>
+                    <option value="msc">M.sc</option>
+                    <option value="mca">MCA</option>
+                    <option value="btech">B.tech</option>
+                    <option value="mba">MBA</option>
+                    <option value="llb">Llb</option>
+                    <option value="mbbs">MBBS</option>
+                </select><br><br>
+                <label for="hobbies">Hobbies :</label><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="music" name="hobbies">
+                &nbsp;
+                <span id="Music">Music</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="hobbies" name="hobbies">
+                &nbsp;
+                <span id="playing">Playing</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="checkbox" id="reading" name="hobbies">
+                &nbsp;
+                <span id="others">Reading</span><br><br>
+                <label for="lastattended university">Last Attended University :</label><br>
+                <input type="text" id="name" name="lastattendeduniversity" placeholder="Enter Last attended Universty "><br>
+                <br>
+                <input type="submit" id="submit">
+
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
